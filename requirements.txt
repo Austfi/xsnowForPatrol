@@ -1,5 +1,8 @@
 # Core dependencies for xsnow tutorial
-xsnow>=0.1.0
+# Note: xsnow is NOT installed via pip - it must be installed from git:
+#   pip install git+https://gitlab.com/avacollabra/postprocessing/xsnow
+# See README.md for installation instructions.
+
 jupyter>=1.0.0
 notebook>=6.0.0
 ipykernel>=6.0.0

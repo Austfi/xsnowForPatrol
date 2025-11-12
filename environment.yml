@@ -16,5 +16,7 @@ dependencies:
   - dask>=2022.0.0
   - netcdf4>=1.6.0
   - pip:
-    - xsnow>=0.1.0
+    # Note: xsnow must be installed from git after creating the environment:
+    #   pip install git+https://gitlab.com/avacollabra/postprocessing/xsnow
+    # See README.md for complete installation instructions.
 
