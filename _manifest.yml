@@ -1,0 +1,41 @@
+notebooks:
+  - path: notebooks/07_timezones.ipynb
+    source_url: https://xsnow.avacollabra.org/dev/timezones
+    source_type: xsnow-dev-docs
+    last_synced: 2024-05-15
+    sync_notes: Adapted timezone alignment examples for xsnow sample data APIs.
+  - path: notebooks/07a_timezones_alignment_case_study.ipynb
+    source_url: https://xsnow.avacollabra.org/dev/timezones#case-study
+    source_type: xsnow-dev-docs
+    last_synced: 2024-05-15
+    sync_notes: Scenario-based alignment workflow inspired by dev guide.
+  - path: notebooks/08_labeled_data.ipynb
+    source_url: https://xsnow.avacollabra.org/dev/labeled-data
+    source_type: xsnow-dev-docs
+    last_synced: 2024-05-15
+    sync_notes: Converted categorical handling guidance to xsnow sample dataset workflow.
+  - path: notebooks/08a_labeled_data_custom_labels.ipynb
+    source_url: https://xsnow.avacollabra.org/dev/labeled-data#custom
+    source_type: xsnow-dev-docs
+    last_synced: 2024-05-15
+    sync_notes: Implemented advanced labeling schema from developer playbook.
+  - path: notebooks/09_tables.ipynb
+    source_url: https://xsnow.avacollabra.org/dev/reporting
+    source_type: xsnow-dev-docs
+    last_synced: 2024-05-15
+    sync_notes: Adapted reporting examples for pandas-based tables.
+  - path: notebooks/09a_tables_reporting_templates.ipynb
+    source_url: https://xsnow.avacollabra.org/dev/reporting#templates
+    source_type: xsnow-dev-docs
+    last_synced: 2024-05-15
+    sync_notes: Automated bulletin template walkthrough derived from dev docs.
+  - path: notebooks/10_large_datasets.ipynb
+    source_url: https://xsnow.avacollabra.org/dev/large-datasets
+    source_type: xsnow-dev-docs
+    last_synced: 2024-05-15
+    sync_notes: Scaled processing guidance aligned with sample dataset operations.
+  - path: notebooks/10a_large_datasets_performance.ipynb
+    source_url: https://xsnow.avacollabra.org/dev/large-datasets#performance
+    source_type: xsnow-dev-docs
+    last_synced: 2024-05-15
+    sync_notes: Distributed performance tuning tutorial mapped to xsnow sample data.
