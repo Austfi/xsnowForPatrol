@@ -1,5 +1,9 @@
 # xsnowForPatrol: A Beginner's Guide to xsnow
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Austfi/xsnowForPatrol/blob/main/notebooks/01_introduction_and_loading_data.ipynb)
+
 A comprehensive Python tutorial repository for learning how to use `xsnow`, a powerful library for working with snowpack simulation data from SNOWPACK and other snow models.
 
 ## Overview
@@ -137,9 +141,83 @@ By the end of these tutorials, you will be able to:
 - **SNOWPACK Model**: [snowpack.slf.ch](https://snowpack.slf.ch) - SNOWPACK model documentation
 - **xarray Documentation**: [docs.xarray.dev](https://docs.xarray.dev) - xarray fundamentals (xsnow is built on xarray)
 
+## Troubleshooting
+
+### Installation Issues
+
+**Problem**: `xsnow` installation fails from git
+- **Solution**: Make sure you have `git` installed and can access GitLab. Try: `pip install --upgrade pip` first, then install xsnow.
+
+**Problem**: Import errors after installation
+- **Solution**: Verify installation: `python -c "import xsnow; print(xsnow.__version__)"`. If this fails, reinstall xsnow.
+
+**Problem**: Dependencies conflict
+- **Solution**: Use a fresh virtual environment. See Installation section above.
+
+### Runtime Issues
+
+**Problem**: Notebooks fail to load sample data
+- **Solution**: Make sure xsnow is properly installed. The sample data is included with xsnow, so if loading fails, reinstall xsnow.
+
+**Problem**: Memory errors with large datasets
+- **Solution**: Use `dask` for lazy loading (already included in dependencies). Consider loading smaller time ranges or using data chunking.
+
+**Problem**: File not found errors when loading custom data
+- **Solution**: Use absolute paths or ensure you're running notebooks from the repository root directory. See notebook 05 for detailed troubleshooting.
+
+## FAQ
+
+### Do I need SNOWPACK installed to use these tutorials?
+
+No! The tutorials use xsnow's built-in sample datasets, so you can learn without having SNOWPACK or any data files. You only need SNOWPACK if you want to work with your own data (covered in notebook 05).
+
+### Can I run these notebooks without installing anything locally?
+
+Yes! Use Google Colab - just click the "Open in Colab" badge at the top of any notebook. The installation cell will set everything up automatically.
+
+### What Python version do I need?
+
+Python 3.8 or higher is required. The tutorials work with Python 3.8, 3.9, 3.10, 3.11, and 3.12.
+
+### How long does it take to complete all tutorials?
+
+Each notebook takes approximately 30-60 minutes depending on your Python experience. The full series can be completed in 4-6 hours.
+
+### Can I use these tutorials with my own data?
+
+Absolutely! Notebook 05 specifically covers working with custom data. You can also adapt examples from other notebooks to your data.
+
+### Where can I get help if I'm stuck?
+
+1. Check the [xsnow API documentation](https://xsnow.avacollabra.org/dev/)
+2. Review the troubleshooting section above
+3. Open an issue on this repository
+4. Check the exercises at the end of each notebook for practice
+
 ## Contributing
 
-This is a learning resource! If you find errors, have suggestions, or want to add examples, contributions are welcome. Please open an issue or submit a pull request.
+This is a learning resource! If you find errors, have suggestions, or want to add examples, contributions are welcome. Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+Ways to contribute:
+- Report bugs or unclear explanations
+- Suggest improvements to examples
+- Add new examples or exercises
+- Improve documentation
+- Fix typos or formatting issues
+
+Please open an issue or submit a pull request.
+
+### Development workflow
+
+To contribute code or documentation updates, install the development tooling and pre-commit hooks:
+
+```bash
+pip install -r requirements.txt
+pre-commit install
+```
+
+Running `pre-commit run --all-files` before opening a pull request helps ensure formatting (via Black and Ruff), strips notebook outputs with nbstripout, and catches trailing whitespace issues early.
+
 
 ## License
 
