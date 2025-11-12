@@ -1,0 +1,37 @@
+# Manifest format:
+# <notebook filename>:
+#   docs_version: "<xsnow documentation version string, e.g. 'dev' or 'v1.2'>"
+#   last_synced: "<ISO 8601 UTC timestamp for when links were last validated>"
+#   sources:
+#     - "<Primary documentation URL>"
+#     - "<Optional additional documentation URL(s)>"
+01_introduction_and_loading_data.ipynb:
+  docs_version: "dev"
+  last_synced: "2025-11-12T21:16:13Z"
+  sources:
+    - "https://xsnow.avacollabra.org/dev/getting_started.html"
+02_basic_operations_and_analysis.ipynb:
+  docs_version: "dev"
+  last_synced: "2025-11-12T21:16:13Z"
+  sources:
+    - "https://xsnow.avacollabra.org/dev/tutorials/basic_operations.html"
+03_visualization.ipynb:
+  docs_version: "dev"
+  last_synced: "2025-11-12T21:16:13Z"
+  sources:
+    - "https://xsnow.avacollabra.org/dev/tutorials/visualization.html"
+04_advanced_analysis.ipynb:
+  docs_version: "dev"
+  last_synced: "2025-11-12T21:16:13Z"
+  sources:
+    - "https://xsnow.avacollabra.org/dev/tutorials/advanced_analysis.html"
+05_working_with_custom_data.ipynb:
+  docs_version: "dev"
+  last_synced: "2025-11-12T21:16:13Z"
+  sources:
+    - "https://xsnow.avacollabra.org/dev/howto/custom_data.html"
+06_extending_xsnow.ipynb:
+  docs_version: "dev"
+  last_synced: "2025-11-12T21:16:13Z"
+  sources:
+    - "https://xsnow.avacollabra.org/dev/developer/extending_xsnow.html"
