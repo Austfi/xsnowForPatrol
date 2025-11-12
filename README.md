@@ -207,6 +207,18 @@ Ways to contribute:
 
 Please open an issue or submit a pull request.
 
+### Development workflow
+
+To contribute code or documentation updates, install the development tooling and pre-commit hooks:
+
+```bash
+pip install -r requirements.txt
+pre-commit install
+```
+
+Running `pre-commit run --all-files` before opening a pull request helps ensure formatting (via Black and Ruff), strips notebook outputs with nbstripout, and catches trailing whitespace issues early.
+
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
