@@ -39,7 +39,7 @@ xsnow is not available via standard pip, so you need to install it from the git 
 2. Install dependencies and xsnow:
    ```bash
    pip install numpy pandas xarray matplotlib seaborn dask netcdf4
-   pip install git+https://gitlab.com/avacollabra/xsnow.git
+   pip install git+https://gitlab.com/avacollabra/postprocessing/xsnow
    ```
 
    **Note**: Update the git URL to the actual xsnow repository location. Check [xsnow documentation](https://xsnow.avacollabra.org) for the correct repository URL.
@@ -54,7 +54,7 @@ xsnow is not available via standard pip, so you need to install it from the git 
 
 2. Install xsnow from git:
    ```bash
-   pip install git+https://gitlab.com/avacollabra/xsnow.git
+   pip install git+https://gitlab.com/avacollabra/postprocessing/xsnow
    ```
 
 ## Quick Start
