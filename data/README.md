@@ -4,11 +4,23 @@ This directory is where you should place sample data files for the tutorials. Th
 
 ## Obtaining Sample Data
 
-### Option 1: Using xsnow Sample Data
+### Option 1: Using xsnow Built-in Sample Data (Recommended)
 
-If xsnow provides sample data or example files, check the xsnow documentation:
-- Visit [xsnow.avacollabra.org](https://xsnow.avacollabra.org) for the latest documentation
-- Look for example datasets or sample files in the xsnow repository
+xsnow includes built-in sample data that you can use immediately! This is the easiest way to get started:
+
+```python
+import xsnow
+
+# Get the directory containing sample data
+sample_data_dir = xsnow.sample_data.snp_gridded_dir()
+
+# Load the sample data
+ds = xsnow.read(sample_data_dir)
+```
+
+The sample data includes gridded snow pit data that you can use for all the tutorials. No need to download anything - it's included with xsnow!
+
+For more information, visit [xsnow.avacollabra.org](https://xsnow.avacollabra.org/dev/) for the latest documentation.
 
 ### Option 2: SNOWPACK Example Outputs
 
@@ -77,15 +89,21 @@ If you're having trouble finding or loading data:
 3. **Check file permissions**: Make sure you have read access to the files
 4. **See notebook 06**: The custom data notebook covers common issues and solutions
 
-## Example: Downloading from xsnow (if available)
+## Using xsnow Sample Data in Notebooks
 
-If xsnow provides sample data, you might download it like this:
+All tutorials use xsnow's built-in sample data by default. The notebooks automatically load sample data using:
 
 ```python
-# Example (check xsnow docs for actual method)
 import xsnow
-# xsnow.download_sample_data()  # If such a function exists
+
+# Get sample data directory
+sample_data_dir = xsnow.sample_data.snp_gridded_dir()
+
+# Load the data
+ds = xsnow.read(sample_data_dir)
 ```
 
-Or manually download from the xsnow repository/examples section.
+This means you can run all the tutorials immediately without needing to download or prepare any files!
+
+For more details, see the [xsnow documentation](https://xsnow.avacollabra.org/dev/).
 
