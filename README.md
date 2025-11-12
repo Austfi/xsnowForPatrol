@@ -22,7 +22,7 @@ This repository contains step-by-step Jupyter notebooks designed to teach you ho
 
 - Basic Python knowledge (variables, functions, basic data types)
 - Familiarity with Jupyter notebooks (helpful but not required)
-- No prior experience with NumPy, pandas, or xarray needed (we'll cover the basics)
+- No prior experience with NumPy, pandas, or xarray needed (see notebook 00 for Python fundamentals reference)
 
 ## Installation
 
@@ -83,10 +83,11 @@ xsnow is not available via standard pip, so you need to install it from the git 
 
 The tutorials are designed to be completed in sequence. Each notebook is standalone and includes installation instructions for Colab users:
 
+### Main Tutorial Series (Complete in Order)
+
 1. **[01_introduction_and_loading_data.ipynb](notebooks/01_introduction_and_loading_data.ipynb)**
    - Introduction to xsnow and its purpose
    - Understanding the 5-dimensional data model
-   - Python fundamentals (NumPy, pandas, xarray basics)
    - Loading and exploring snowpack data files
 
 2. **[02_basic_operations_and_analysis.ipynb](notebooks/02_basic_operations_and_analysis.ipynb)**
@@ -99,20 +100,30 @@ The tutorials are designed to be completed in sequence. Each notebook is standal
    - Time series visualizations
    - Customizing plots for presentations
 
-4. **[04_advanced_analysis.ipynb](notebooks/04_advanced_analysis.ipynb)**
-   - Stability indices and hazard calculations
-   - Advanced temporal analysis
-   - Using xsnow extensions
+4. **[04_advanced_analysis.ipynb](notebooks/04_advanced_analysis.ipynb)** (Gradient and Temporal Analysis)
+   - Density and temperature gradient analysis
+   - Temporal analysis with rolling windows
+   - Comparing multiple locations
 
 5. **[05_working_with_custom_data.ipynb](notebooks/05_working_with_custom_data.ipynb)**
    - Preparing your own .pro and .smet files
    - Loading custom data
    - Troubleshooting common issues
+   - Merging multiple data sources
 
 6. **[06_extending_xsnow.ipynb](notebooks/06_extending_xsnow.ipynb)**
    - Understanding xsnow's architecture
    - Creating custom extensions
    - Contributing to xsnow
+
+### Optional Reference Notebooks
+
+These notebooks cover advanced topics and can be consulted as needed:
+
+- **[00_python_fundamentals_reference.ipynb](notebooks/00_python_fundamentals_reference.ipynb)**: Python, NumPy, Pandas, and Xarray basics (for beginners)
+- **[07_data_quality_and_cleaning.ipynb](notebooks/07_data_quality_and_cleaning.ipynb)**: Comprehensive missing data handling and data quality strategies
+- **[08_advanced_xarray_techniques.ipynb](notebooks/08_advanced_xarray_techniques.ipynb)**: Broadcasting, alignment, groupby, and resampling
+- **[09_performance_and_storage.ipynb](notebooks/09_performance_and_storage.ipynb)**: Data type optimization, Zarr format, and performance tuning
 
 ## Sample Data
 
