@@ -42,7 +42,7 @@ xsnow is not available via standard pip, so you need to install it from the git 
    pip install git+https://gitlab.com/avacollabra/postprocessing/xsnow
    ```
 
-   **Note**: Update the git URL to the actual xsnow repository location. Check [xsnow documentation](https://xsnow.avacollabra.org) for the correct repository URL.
+   **Note**: The git URL above is correct. For the latest xsnow documentation and API reference, visit [xsnow.avacollabra.org/dev/](https://xsnow.avacollabra.org/dev/).
 
 ### Option 3: Using conda
 
@@ -112,7 +112,12 @@ The tutorials are designed to be completed in sequence. Each notebook is standal
 
 ## Sample Data
 
-To follow along with the tutorials, you'll need sample data files. See [data/README.md](data/README.md) for instructions on how to obtain sample .pro and .smet files from xsnow or SNOWPACK.
+All tutorials use xsnow's built-in lightweight sample datasets! No need to download anything - the notebooks automatically load sample data using:
+
+- **`xsnow.single_profile()`**: Single snow profile (no time dimension) - used in notebook 06
+- **`xsnow.single_profile_timeseries()`**: Time series of profiles - used in notebooks 01-05
+
+These are lightweight datasets included with xsnow, perfect for learning. For more sample datasets and detailed information, see [data/README.md](data/README.md) and the [xsnow API documentation](https://xsnow.avacollabra.org/dev/).
 
 ## Learning Objectives
 
@@ -127,9 +132,10 @@ By the end of these tutorials, you will be able to:
 
 ## Resources
 
-- **xsnow Documentation**: [xsnow.avacollabra.org](https://xsnow.avacollabra.org)
-- **SNOWPACK Model**: [snowpack.slf.ch](https://snowpack.slf.ch)
-- **xarray Documentation**: [docs.xarray.dev](https://docs.xarray.dev)
+- **xsnow API Documentation**: [xsnow.avacollabra.org/dev/](https://xsnow.avacollabra.org/dev/) - Complete API reference, tutorials, and sample data documentation
+- **xsnow Getting Started**: [xsnow.avacollabra.org/dev/getting_started.html](https://xsnow.avacollabra.org/dev/getting_started.html) - Official getting started guide
+- **SNOWPACK Model**: [snowpack.slf.ch](https://snowpack.slf.ch) - SNOWPACK model documentation
+- **xarray Documentation**: [docs.xarray.dev](https://docs.xarray.dev) - xarray fundamentals (xsnow is built on xarray)
 
 ## Contributing
 

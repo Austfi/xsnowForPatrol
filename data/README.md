@@ -6,21 +6,27 @@ This directory is where you should place sample data files for the tutorials. Th
 
 ### Option 1: Using xsnow Built-in Sample Data (Recommended)
 
-xsnow includes built-in sample data that you can use immediately! This is the easiest way to get started:
+xsnow includes lightweight sample datasets that you can use immediately! This is the easiest way to get started:
 
 ```python
 import xsnow
 
-# Get the directory containing sample data
-sample_data_dir = xsnow.sample_data.snp_gridded_dir()
+# Single profile (no time dimension) - lightweight, fast
+ds_single = xsnow.single_profile()
 
-# Load the sample data
-ds = xsnow.read(sample_data_dir)
+# Time series of profiles - perfect for learning time-based operations
+ds_timeseries = xsnow.single_profile_timeseries()
 ```
 
-The sample data includes gridded snow pit data that you can use for all the tutorials. No need to download anything - it's included with xsnow!
+**Available Sample Datasets:**
 
-For more information, visit [xsnow.avacollabra.org](https://xsnow.avacollabra.org/dev/) for the latest documentation.
+- **`xsnow.single_profile()`**: Returns a single snow profile (no time dimension) - perfect for learning profile structure
+- **`xsnow.single_profile_timeseries()`**: Returns a time series of snow profiles - perfect for learning time-based operations
+- **`xsnow.sample_data`**: Additional datasets available (see [xsnow API documentation](https://xsnow.avacollabra.org/dev/) for full list)
+
+All tutorials use these lightweight sample datasets by default. No need to download anything - they're included with xsnow!
+
+For detailed information about all available sample datasets, visit the [xsnow API documentation](https://xsnow.avacollabra.org/dev/).
 
 ### Option 2: SNOWPACK Example Outputs
 
@@ -91,19 +97,23 @@ If you're having trouble finding or loading data:
 
 ## Using xsnow Sample Data in Notebooks
 
-All tutorials use xsnow's built-in sample data by default. The notebooks automatically load sample data using:
+All tutorials use xsnow's lightweight sample datasets by default. The notebooks automatically load sample data using:
 
 ```python
 import xsnow
 
-# Get sample data directory
-sample_data_dir = xsnow.sample_data.snp_gridded_dir()
+# For time series tutorials (most notebooks)
+ds = xsnow.single_profile_timeseries()
 
-# Load the data
-ds = xsnow.read(sample_data_dir)
+# For single profile examples
+ds = xsnow.single_profile()
 ```
 
 This means you can run all the tutorials immediately without needing to download or prepare any files!
 
-For more details, see the [xsnow documentation](https://xsnow.avacollabra.org/dev/).
+**Which dataset to use:**
+- **`xsnow.single_profile_timeseries()`**: Used in notebooks 01-05 (introduction, operations, visualization, advanced analysis, custom data)
+- **`xsnow.single_profile()`**: Used in notebook 06 (extending xsnow) for simpler examples
+
+For more details and additional sample datasets, see the [xsnow API documentation](https://xsnow.avacollabra.org/dev/).
 
