@@ -48,8 +48,18 @@ xsnow is not available via standard pip, so you need to install it from the git 
 
    **Note**: The git URL above is correct. For the latest xsnow documentation and API reference, visit [xsnow.avacollabra.org/dev/](https://xsnow.avacollabra.org/dev/).
 
-### Option 3: Using conda
+### Option 3: Using conda (Recommended for Local Development)
 
+**Quick Setup (Automated):**
+```bash
+# macOS/Linux:
+./setup_kernel.sh
+
+# Windows:
+setup_kernel.bat
+```
+
+**Manual Setup:**
 1. Create a conda environment:
    ```bash
    conda env create -f environment.yml
@@ -60,6 +70,13 @@ xsnow is not available via standard pip, so you need to install it from the git 
    ```bash
    pip install git+https://gitlab.com/avacollabra/postprocessing/xsnow
    ```
+
+3. Register as Jupyter kernel:
+   ```bash
+   python -m ipykernel install --user --name xsnow-tutorial --display-name "Python (xsnow-tutorial)"
+   ```
+
+**📖 For detailed kernel setup instructions, see [KERNEL_SETUP.md](KERNEL_SETUP.md)**
 
 ## Quick Start
 
